@@ -1,0 +1,2 @@
+<?php
+	$name = 'Smily Monster';
