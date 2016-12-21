@@ -1,0 +1,18 @@
+body {
+    margin: 0 auto;
+}
+h1{
+text-align: center;
+}
+.gallery {
+    width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img {
+    margin: 10px 0;
+}
+.hr {
+    width: 90%;
+}
