@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    width: 500px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.comments {
+    height: 200px;
+}
+.comments dl dt {
+    font: italic bold 110% serif;
+}
