@@ -1,0 +1,23 @@
+body {
+    margin: 0 auto;
+    width: 500px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.comments {
+    height: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+.comments dl dt {
+    font: italic bold 110% serif;
+}
+textarea {
+    margin: 10px 0;
+}
+input[type="submit"] {
+    height: 50px;
+    margin-bottom: 20px;
+}
