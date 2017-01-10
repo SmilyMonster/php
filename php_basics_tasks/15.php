@@ -60,7 +60,7 @@ if (isset($_POST['arg1'], $_POST['arg2'], $_POST['action']))
         </div>
         <div class="form-group">
             <label for="result">Результат:
-                <input id="result" class="form-control" type="text" value="<?php if($result) echo $result?>" readonly/>
+                <input id="result" class="form-control" type="text" value="<?=isset($result) ? $result : ''?>" readonly/>
             </label>
         </div>
         <input type="submit" value="Посчитать" />
