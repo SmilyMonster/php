@@ -4,9 +4,9 @@ require 'functions.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8">
     <title>Chat Room</title>
-    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <p>8. Создать гостевую книгу, где любой человек может оставить комментарий в текстовом поле и добавить его. Все добавленные комментарии выводятся над текстовым полем.
@@ -21,6 +21,7 @@ require 'functions.php';
     <label>Ваше имя:
         <input type="text" name="userName" placeholder="Max" />
     </label>
+    <br />
     <textarea name="comment" id="" cols="30" rows="10" placeholder="Оставте комментарий"></textarea>
     <input type="submit" value="Submit" />
 </form>

@@ -1,14 +1,52 @@
-body {
-    margin: 0 auto;
-    width: 500px;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-form {
-    display: flex;
-    flex-direction: column;
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+body {
+width: 600px;
+margin: 0 auto;
 }
 .comments {
-    height: 200px;
+    height: 300px;
+    overflow-y: scroll;
+    background: #edfff2;
 }
 .comments dl dt {
     font: italic bold 110% serif;
+    margin: 10px 10px 0 10px;
+}
+.comments dl dd {
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+.wrapper{
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 10px 10px 10px 0;
+	background: #CCCCFF;
+}
+input, textarea {
+    outline:none;
+}
+input[type="text"]{
+	margin: 10px 0;
+	background: #edfff2;
+	border: none;
+	border-bottom: 1px solid black;
+	text-align: center;
+	font-size: 1em;
+}
+textarea {
+	background: #edfff2;
+	width: 600px;
+}
+input[type="submit"]{
+	width: 600px;
+	height: 30px;
 }

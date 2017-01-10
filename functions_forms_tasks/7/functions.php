@@ -17,10 +17,23 @@ function showComments()
     {
         $data = unserialize($string);
         list($userName, $comment) = $data;
+        $comment = filterComments($comment);
         $output .= <<<COMMENT
-<dt>$userName</dt>
-<dd>$comment</dd>
+<div class = "wrapper">
+    <dt>$userName</dt>
+    <dd>$comment</dd>
+</div>
 COMMENT;
     }
     return $output;
+}
+
+function filterComments($comment)
+{
+    $badWords = array('fuck', 'buck', 'crack');
+    foreach ($badWords as $badWord) {
+        if (stripos($comment, $badWord) !== false)
+            $comment = 'Некорректный комментарий';
+    }
+    return $comment;
 }
