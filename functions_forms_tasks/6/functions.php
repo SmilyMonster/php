@@ -18,7 +18,7 @@ function showImages()
         $images = array_diff(scandir('gallery'), array('..', '.'));
         foreach($images as $image)
             $html.= <<<GALLERY
-            <img src = "gallery/$image" />
+            <a href="#"><img src = "gallery/$image" /></a>
 GALLERY;
     }
     return $html;

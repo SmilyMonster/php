@@ -20,8 +20,8 @@
 </form>
 <hr class="hr" />
 <h1>Gallery</h1>
+<hr class="hr2" />
 <div class="gallery">
-
     <?=showImages()?>
 </div>
 </body>

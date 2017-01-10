@@ -1,18 +1,69 @@
 body {
+	width: 800px;
     margin: 0 auto;
+	background: url('http://www.babaimage.com/images/black-brick-wall-background-hd-brick-wall-and-wood-floor.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
 }
 h1{
-text-align: center;
-}
-.gallery {
-    width: 680px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-img {
-    margin: 10px 0;
+	font-size: 3em;
+	text-align: center;
+	color: #FFAE19;
+	letter-spacing: 10px;
 }
 .hr {
     width: 90%;
+}
+.hr2 {
+	width: 50%;
+	margin-bottom: 20px;
+}
+.gallery {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.gallery a img{    
+    -webkit-border-radius: 25px;
+    -moz-border-radius:  25px;
+    border-radius:  25px;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+    transition: all 1.0s ease;
+    -webkit-box-shadow: 0px 2px 4px 1px #DFDFDF;
+    -moz-box-shadow: 0px 2px 4px 1px #DFDFDF;
+    box-shadow: 0px 2px 4px 1px #DFDFDF; 
+    -moz-opacity: 0.70;
+    opacity: 0.70;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+    padding: 10px;
+    margin-top: 10px;
+    display:inline-block;
+    height:150px;
+}
+.gallery a img:hover{
+    -moz-opacity: 1;
+    opacity: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+}
+.gallery a:focus img{
+    position: relative;
+    height:300px;
+    cursor: pointer;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+    transition: all 1.0s ease;
+    -webkit-box-shadow: 0px 4px 4px 1px #DFDFDF;
+    -moz-box-shadow: 0px 4px 4px 1px #DFDFDF;
+    box-shadow: 0px 4px 4px 1px #DFDFDF; 
+}
+.gallery a{
+    outline:0; border:0;
 }
